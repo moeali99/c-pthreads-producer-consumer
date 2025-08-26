@@ -1,0 +1,1 @@
+name: C Make CI\non: [push, pull_request]\njobs:\n  build:\n    runs-on: macos-latest\n    steps:\n      - uses: actions/checkout@v4\n      - name: Build\n        run: make\n
